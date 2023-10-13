@@ -42,12 +42,12 @@ const pickName = {
   name: "Dinner",
 };
 // console.log(pickOneItem(pickName));
-function removeSpecificItem(menu: Omit<Menu, "menu">) {
+function removeSpecificItem(menu: Omit<Menu, "persons">) {
   return menu;
 }
 
 const hideMenu = {
   name: "Dinner",
-  persons: 10,
+  menu: ["Pizza", "Fruits", "Milk"],
 };
 console.log(removeSpecificItem(hideMenu));
